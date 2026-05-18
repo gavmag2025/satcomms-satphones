@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Satphones Pricing Brochure — SatComms</title>
+<template id="__bundler_thumbnail">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+    <rect width="100" height="100" fill="#1f78bd"/>
+    <g fill="none" stroke="#e8a23a" stroke-width="2.5" stroke-linecap="round">
+      <circle cx="50" cy="50" r="14"/>
+      <path d="M50 36 V22 M50 64 V78 M36 50 H22 M64 50 H78"/>
+      <path d="M30 30 L70 70 M70 30 L30 70" opacity="0.35"/>
+    </g>
+    <circle cx="50" cy="50" r="4" fill="#ffffff"/>
+  </svg>
+</template>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,800;9..144,900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1f78bd;
+    --ink-2:#2c8cd0;
+    --teal:#155f96;
+    --accent:#e8a23a;
+    --paper:#ffffff;
+    --paper-2:#eef4f7;
+    --line:#1f78bd;
+    --muted:#5a6770;
+    --bg:#ffffff;
+    --display:'Barlow Condensed', sans-serif;
+    --body:'Inter', sans-serif;
+    --mono:'JetBrains Mono', monospace;
+    --display-tt:uppercase;
+    --display-track:.02em;
+    --display-weight:800;
+  }
+  body.pal-desert{ --ink:#3a2615;--ink-2:#4d3320;--teal:#a04924;--accent:#d98e2b;--paper:#f1e6d2;--paper-2:#e6d6b8;--muted:#7a6649;--bg:#cbb795; }
+  body.pal-arctic{ --ink:#1a2a33;--ink-2:#243744;--teal:#3a7a8c;--accent:#0d3b66;--paper:#f6f8fa;--paper-2:#e6ecf0;--muted:#6c7a85;--bg:#cdd6dd; }
+  body.pal-night{ --ink:#0a0f0c;--ink-2:#142019;--teal:#2f7a4e;--accent:#7cf0a4;--paper:#0f1411;--paper-2:#1a221d;--muted:#7a8a80;--bg:#06090a;color-scheme:dark; }
+  body.pal-night .page{color:#dfe9e2}
+  body.pal-night .product, body.pal-night .coverage, body.pal-night .acc{background:#13191a;color:#dfe9e2}
+  body.pal-night .p-foot{background:#0a0f0c}
+  body.pal-night .p-media{background:repeating-linear-gradient(135deg,#15201a 0 8px,#0f1714 8px 16px)}
+  body.pal-night .p-media .placeholder{color:#7e8d84;border-color:#314239}
+  body.pal-night .p-row .label, body.pal-night .p-desc, body.pal-night .coverage p, body.pal-night .about p{color:#bfd0c6}
+  body.pal-night .p-row .zar{color:#dfe9e2}
+  body.pal-night .strip-row{color:#bfd0c6;border-bottom-color:#1f2e25}
+  body.pal-night .about{background:#10171a;color:#dfe9e2}
+
+  body.voice-editorial{ --display:'Fraunces', Georgia, serif;--display-tt:none;--display-track:-.01em;--display-weight:900; }
+  body.voice-editorial .p-eyebrow, body.voice-editorial .brand-line, body.voice-editorial .h-eyebrow, body.voice-editorial .strip-row.head, body.voice-editorial .acc-head h3 small, body.voice-editorial .strip h3 small, body.voice-editorial .coverage h3 small, body.voice-editorial .about h3 small, body.voice-editorial .hero .kicker{font-family:var(--mono);font-weight:500}
+  body.voice-tech{ --display:'JetBrains Mono', monospace;--body:'JetBrains Mono', monospace;--display-tt:uppercase;--display-track:-.02em;--display-weight:700; }
+  body.voice-tech .p-title, body.voice-tech .hero h1, body.voice-tech .brand-tag, body.voice-tech .strip h3, body.voice-tech .coverage h3, body.voice-tech .about h3, body.voice-tech .acc-head h3, body.voice-tech .h-big{font-size:.78em}
+
+  .p-title, .hero h1, .brand-tag, .strip h3, .coverage h3, .about h3, .acc-head h3, .h-big, .footbar .phone, .strip-row .v, .p-row .zar, .brand-mark .name{
+    font-family:var(--display)!important;text-transform:var(--display-tt);letter-spacing:var(--display-track);
+  }
+  .p-title, .hero h1, .brand-tag, .strip h3, .coverage h3, .about h3, .acc-head h3, .h-big{font-weight:var(--display-weight)}
+  body{font-family:var(--body)}
+
+  body.card-hairline .product, body.card-hairline .coverage, body.card-hairline .about, body.card-hairline .strip, body.card-hairline .acc, body.card-hairline .hero{ border:0;background:transparent; }
+  body.card-hairline .product{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink)}
+  body.card-hairline .p-media{border-left:0;background:transparent}
+  body.card-hairline .p-foot{background:transparent;border-top:1px solid var(--ink)}
+  body.card-hairline .hero{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink)}
+  body.card-hairline .strip{border-top:2px solid var(--accent);border-bottom:2px solid var(--accent);color:var(--ink)}
+  body.card-hairline .strip h3, body.card-hairline .strip-row{color:var(--ink)}
+  body.card-hairline .strip h3 small{color:var(--teal)}
+  body.card-hairline .strip-row{border-bottom-color:rgba(31,120,189,.18)}
+  body.card-hairline .strip p{color:var(--muted)}
+  body.card-hairline .strip-row .v{color:var(--ink)}
+  body.card-hairline .acc{border:0;border-bottom:1px solid var(--ink);aspect-ratio:auto;padding:14px 6px}
+  body.card-hairline .acc-grid{gap:0 4mm;border-top:1px solid var(--ink)}
+  body.card-hairline .coverage{border:0;border-top:1px solid var(--ink);padding:6mm 0}
+  body.card-hairline .about{border:0;padding:6mm 0;border-top:1px solid var(--ink)}
+
+  body.card-slab .product{border:0;background:var(--ink);color:var(--paper)}
+  body.card-slab .product .p-title, body.card-slab .product .p-row .zar{color:var(--paper)}
+  body.card-slab .product .p-title em, body.card-slab .product .p-eyebrow{color:var(--accent)}
+  body.card-slab .product .p-desc{color:#cdd9de}
+  body.card-slab .product .p-prices{border-top-color:rgba(255,255,255,.25)}
+  body.card-slab .product .p-row .label{color:#cdd9de}
+  body.card-slab .product .p-row .usd{color:#9fb6c0}
+  body.card-slab .p-foot{background:rgba(0,0,0,.25);border-top-color:rgba(255,255,255,.18)}
+  body.card-slab .p-foot .note{color:#cdd9de}
+  body.card-slab .p-cta{background:var(--accent);color:var(--ink);border-color:var(--accent)}
+  body.card-slab .p-media{border-left:1.5px solid rgba(255,255,255,.2);background:repeating-linear-gradient(135deg,rgba(255,255,255,.04) 0 8px,rgba(255,255,255,.08) 8px 16px)}
+  body.card-slab .p-media .placeholder{color:#9fb6c0;border-color:rgba(255,255,255,.3)}
+  body.card-slab .p-media .meta{color:#9fb6c0}
+  body.card-slab .hero{border:0}
+  body.card-slab .hero-l{background:var(--accent);color:var(--ink)}
+  body.card-slab .hero-l h1, body.card-slab .hero-l p, body.card-slab .hero-l .kicker, body.card-slab .hero-l .stat .n{color:var(--ink-2)}
+  body.card-slab .strip{border:0}
+  body.card-slab .coverage{border:0;background:var(--paper-2)}
+  body.card-slab .about{border:0;background:var(--ink);color:var(--paper)}
+  body.card-slab .about p{color:#cdd9de}
+  body.card-slab .acc{border:0;background:var(--paper-2)}
+
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:var(--body);}
+  .stage{display:flex;flex-direction:column;align-items:center;gap:32px;padding:32px 16px 64px;}
+  .page{
+    width:210mm;min-height:297mm;background:var(--paper);
+    box-shadow:0 24px 60px rgba(11,42,58,.18), 0 2px 0 rgba(11,42,58,.06);
+    position:relative;overflow:hidden;display:flex;flex-direction:column;
+  }
+  .brand{ background:var(--ink);color:var(--paper); padding:14mm 14mm 10mm;display:flex;align-items:flex-end;justify-content:space-between;gap:12mm; position:relative; }
+  .brand::after{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;background:linear-gradient(90deg,var(--accent) 0 38%,transparent 38% 42%,var(--accent) 42% 100%);}
+  .brand-mark{display:flex;align-items:center;gap:10px}
+  .brand-line{font-family:'Barlow Condensed';font-weight:600;letter-spacing:.32em;font-size:11px;color:#bcd0d9;text-transform:uppercase}
+  .brand-tag{ font-family:'Barlow Condensed';font-weight:800;font-size:46px;line-height:.95;letter-spacing:.02em; text-transform:uppercase;text-align:right; }
+  .brand-tag b{color:var(--accent)}
+  .brand-tag small{display:block;font-family:'JetBrains Mono';font-weight:500;font-size:10px;letter-spacing:.28em;color:#9fb6c0;margin-top:6px}
+
+  .product{ display:grid;grid-template-columns:1.15fr .85fr;gap:0; margin:10mm 14mm 0;border:1.5px solid var(--ink);background:#fff; position:relative; }
+  .product + .product{margin-top:8mm}
+  .p-body{padding:8mm 8mm 6mm;display:flex;flex-direction:column;gap:4mm}
+  .p-eyebrow{ display:inline-flex;align-items:center;gap:8px; font-family:'Barlow Condensed';font-weight:700;letter-spacing:.32em;font-size:11px;color:var(--teal); text-transform:uppercase; }
+  .p-eyebrow::before{content:"";width:22px;height:2px;background:var(--accent)}
+  .p-title{ font-family:'Barlow Condensed';font-weight:800;font-size:42px;line-height:.95; letter-spacing:.01em;text-transform:uppercase;margin:0;color:var(--ink); }
+  .p-title em{font-style:normal;color:var(--teal)}
+  .p-desc{font-size:11.5px;line-height:1.55;color:#33424c;margin:0;max-width:54ch}
+  .p-prices{margin-top:auto;border-top:1px solid var(--ink);padding-top:5mm;display:flex;flex-direction:column;gap:8px}
+  .p-row{ display:grid;grid-template-columns:1fr 78px 100px;align-items:baseline;gap:14px; font-family:'Inter';font-size:11.5px; }
+  .p-row .label{color:#23323b}
+  .p-row .usd{font-family:'JetBrains Mono';font-size:10.5px;color:var(--muted);letter-spacing:.04em;white-space:nowrap}
+  .p-row .zar{font-family:'Barlow Condensed';font-weight:800;font-size:18px;color:var(--ink);letter-spacing:.02em;white-space:nowrap;min-width:9ch;text-align:right}
+  .p-row.headline .zar{font-size:22px;color:var(--teal)}
+  .p-foot{ margin-top:4mm;display:flex;align-items:center;justify-content:space-between;gap:10px; background:var(--paper-2);margin:4mm -8mm -6mm;padding:10px 8mm; border-top:1px solid var(--ink); }
+  .p-foot .note{font-family:'JetBrains Mono';font-size:9.5px;letter-spacing:.04em;color:#384955;text-transform:uppercase}
+  .p-cta{ display:inline-flex;gap:6px;align-items:center; background:var(--ink);color:var(--paper);text-decoration:none; font-family:'Barlow Condensed';font-weight:700;letter-spacing:.22em;font-size:11px; padding:8px 14px;text-transform:uppercase;border:1.5px solid var(--ink); }
+  .p-cta::after{content:"→";font-family:Inter;letter-spacing:0}
+  .p-media{ border-left:1.5px solid var(--ink);background: repeating-linear-gradient(135deg, #eef2f3 0 8px, #e6ebed 8px 16px); position:relative;display:flex;flex-direction:column;justify-content:space-between; padding:6mm; }
+  .p-media .badge{ align-self:flex-end;background:var(--accent);color:var(--ink); font-family:'Barlow Condensed';font-weight:800;letter-spacing:.18em;font-size:10px; padding:4px 10px;text-transform:uppercase; }
+  .p-media .placeholder{ flex:1;display:flex;align-items:center;justify-content:center; margin:6px 0;border:1px dashed #94a3aa;color:#5b6e77; font-family:'JetBrains Mono';font-size:10px;letter-spacing:.12em;text-align:center;line-height:1.5;text-transform:uppercase; }
+  .p-media .pl-photo{ border:0;background:#fff;padding:6px;overflow:hidden; }
+  .p-media .pl-photo img{ width:100%;height:100%;object-fit:contain;display:block; }
+  body.pal-night .p-media .pl-photo{ background:#f4f6f5; }
+  .p-media .meta{ display:flex;justify-content:space-between;font-family:'JetBrains Mono';font-size:9px; color:#46575f;letter-spacing:.16em;text-transform:uppercase; }
+
+  .strip{ margin:10mm 14mm 0;background:var(--ink);color:var(--paper); padding:6mm 8mm;display:grid;grid-template-columns:1.1fr 2fr;gap:8mm; position:relative; }
+  .strip h3{ font-family:'Barlow Condensed';font-weight:800;font-size:28px;letter-spacing:.04em; text-transform:uppercase;margin:0;line-height:1; }
+  .strip h3 small{display:block;color:var(--accent);font-size:10px;letter-spacing:.32em;font-weight:600;margin-bottom:6px}
+  .strip p{font-size:10.5px;line-height:1.55;margin:8px 0 0;color:#cdd9de;max-width:32ch}
+  .strip-grid{ display:grid;grid-template-columns:repeat(2,1fr);gap:6px 18px;align-content:start; }
+  .strip-row{ display:grid;grid-template-columns:1fr auto;border-bottom:1px dashed #2a4d5e;padding:6px 0; font-size:11px;color:#dde7eb; }
+  .strip-row .v{font-family:'Barlow Condensed';font-weight:700;color:#fff;letter-spacing:.04em;font-size:14px}
+  .strip-row.head{grid-column:1/-1;color:var(--accent);font-family:'Barlow Condensed'; font-weight:700;letter-spacing:.28em;text-transform:uppercase;font-size:11px;border-bottom:1.5px solid var(--accent);padding-bottom:4px;margin-top:4px}
+  .strip-row.head:first-child{margin-top:0}
+
+  .footbar{ margin-top:auto;background:var(--ink);color:var(--paper); padding:6mm 14mm;display:flex;justify-content:space-between;align-items:center;gap:16px; }
+  .footbar .phone{font-family:'Barlow Condensed';font-weight:800;font-size:24px;letter-spacing:.06em}
+  .footbar .web{font-family:'JetBrains Mono';font-size:11px;letter-spacing:.16em;color:#cdd9de}
+  .footbar .ctas{display:flex;gap:8px}
+  .footbar .ctas a{ display:inline-flex;align-items:center;gap:6px; background:var(--accent);color:var(--ink);text-decoration:none; font-family:'Barlow Condensed';font-weight:700;letter-spacing:.22em;font-size:11px; padding:9px 14px;text-transform:uppercase; }
+  .footbar .ctas a.ghost{background:transparent;color:var(--paper);border:1.5px solid var(--paper)}
+
+  .pageno{ position:absolute;left:14mm;right:14mm;bottom:30mm; font-family:'JetBrains Mono';font-size:9px;letter-spacing:.32em;color:#7a8993;text-transform:uppercase;display:flex;justify-content:space-between;align-items:center;gap:8mm;pointer-events:none; }
+  .pageno::before{ content:"";flex:1;height:1px;background:rgba(122,137,147,.35); }
+  .pageno::after{ content:"";flex:1;height:1px;background:rgba(122,137,147,.35); }
+  .pageno b{color:var(--ink)}
+
+  .coverage{ margin:10mm 14mm 0;border:1.5px solid var(--ink);padding:6mm;background:#fff; display:grid;grid-template-columns:1.4fr 1fr;gap:6mm; }
+  .coverage h3{ font-family:'Barlow Condensed';font-weight:800;font-size:28px;text-transform:uppercase; letter-spacing:.04em;margin:0;line-height:1;color:var(--ink); }
+  .coverage h3 small{display:block;color:var(--teal);font-size:10px;letter-spacing:.32em;font-weight:600;margin-bottom:6px}
+  .coverage p{font-size:11px;line-height:1.6;color:#2c3a44;margin:8px 0 0}
+  .map{ background: radial-gradient(circle at 50% 50%, rgba(31,120,189,.10) 0 35%, transparent 35.5%), repeating-linear-gradient(0deg, #f3efe6 0 6px, #e8e2d2 6px 7px), repeating-linear-gradient(90deg,#f3efe6 0 6px, #e8e2d2 6px 7px); border:1px solid var(--ink);position:relative;min-height:48mm;display:flex;align-items:center;justify-content:center;overflow:hidden; }
+  .map .globe{ width:78%;height:auto;max-height:90%;display:block;filter:drop-shadow(0 4px 10px rgba(0,0,0,.06)); }
+  .map .map-caption{ position:absolute;left:0;right:0;bottom:6px;display:flex;flex-direction:column;align-items:center;gap:2px;font-family:'Barlow Condensed';font-weight:700;letter-spacing:.2em;font-size:10px;color:var(--ink);text-transform:uppercase;text-align:center;pointer-events:none; }
+  .map .map-caption span:last-child{ font-family:'JetBrains Mono';font-size:8px;letter-spacing:.2em;color:var(--muted);font-weight:500; }
+
+  .accessories{margin:8mm 14mm 0;}
+  .acc-head{ display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:5mm;border-bottom:1.5px solid var(--ink);padding-bottom:4mm; }
+  .acc-head h3{font-family:'Barlow Condensed';font-weight:800;font-size:28px;letter-spacing:.04em;text-transform:uppercase;margin:0;line-height:1}
+  .acc-head h3 small{display:block;color:var(--teal);font-size:10px;letter-spacing:.32em;font-weight:600;margin-bottom:6px}
+  .acc-head p{font-size:10.5px;color:var(--muted);margin:0;max-width:38ch;text-align:right;font-family:'JetBrains Mono';letter-spacing:.06em}
+  .acc-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:4mm}
+  .acc{ aspect-ratio:1/1;border:1px solid var(--ink);background:#fff; display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:6px;text-align:center; }
+  .acc .ico{width:36px;height:36px;color:var(--ink)}
+  .acc .nm{font-family:'Barlow Condensed';font-weight:700;letter-spacing:.14em;font-size:10px;text-transform:uppercase}
+
+  .about{ margin:8mm 14mm 0;background:var(--paper-2);border:1.5px solid var(--ink);padding:7mm; display:grid;grid-template-columns:1fr 1.4fr;gap:7mm; }
+  .about h3{font-family:'Barlow Condensed';font-weight:800;font-size:28px;letter-spacing:.04em;text-transform:uppercase;margin:0;line-height:1}
+  .about h3 small{display:block;color:var(--teal);font-size:10px;letter-spacing:.32em;font-weight:600;margin-bottom:6px}
+  .about p{font-size:10.5px;line-height:1.6;color:#2c3a44;margin:8px 0 0}
+
+  .legal{ margin:6mm 14mm 0;font-family:'JetBrains Mono';font-size:8.5px;letter-spacing:.08em; color:#5b6e77;text-transform:uppercase;line-height:1.6; }
+  .legal b{color:var(--ink)}
+
+  .hero{ margin:10mm 14mm 0;display:grid;grid-template-columns:1.3fr 1fr;border:1.5px solid var(--ink); }
+  .hero-l{padding:8mm 8mm 7mm;background:#fff}
+  .hero-r{ background:var(--ink);color:var(--paper);padding:8mm;display:flex;flex-direction:column;justify-content:space-between;gap:10px; position:relative;overflow:hidden; }
+  .hero-r::before{content:"";position:absolute;right:-40px;top:-40px;width:160px;height:160px;border-radius:50%;border:1.5px solid rgba(232,162,58,.45);}
+  .hero-r::after{content:"";position:absolute;right:-80px;top:-80px;width:240px;height:240px;border-radius:50%;border:1px solid rgba(232,162,58,.25);}
+  .hero h1{ font-family:'Barlow Condensed';font-weight:800;font-size:62px;line-height:.92;letter-spacing:.005em; text-transform:uppercase;margin:0;color:var(--ink); }
+  .hero h1 em{font-style:normal;color:var(--teal);display:block}
+  .hero .kicker{font-family:'Barlow Condensed';font-weight:700;letter-spacing:.32em;font-size:11px;color:var(--accent);text-transform:uppercase;margin-bottom:8px}
+  .hero p{font-size:11.5px;line-height:1.55;color:#33424c;margin:10px 0 0;max-width:46ch}
+  .hero .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:10mm;border-top:1px solid var(--ink);padding-top:5mm}
+  .hero .stat{display:flex;flex-direction:column;gap:6px;padding-right:10px}
+  .hero .stat + .stat{border-left:1px solid rgba(31,120,189,.25);padding-left:14px}
+  .hero .stat .n{font-family:'Barlow Condensed';font-weight:800;font-size:30px;line-height:1;color:var(--teal);letter-spacing:.01em}
+  .hero .stat .l{font-family:'JetBrains Mono';font-size:9px;letter-spacing:.18em;color:var(--muted);text-transform:uppercase;line-height:1.35}
+  .hero-r .h-eyebrow{font-family:'Barlow Condensed';font-weight:700;letter-spacing:.32em;font-size:11px;color:var(--accent);text-transform:uppercase}
+  .hero-r .h-big{font-family:'Barlow Condensed';font-weight:800;font-size:38px;line-height:.95;text-transform:uppercase;letter-spacing:.02em}
+  .hero-r .h-meta{font-family:'JetBrains Mono';font-size:10px;letter-spacing:.18em;color:#9fb6c0;text-transform:uppercase}
+
+  @media print{
+    @page{size:A4;margin:0}
+    html,body{background:#fff;-webkit-print-color-adjust:exact;print-color-adjust:exact;margin:0;padding:0}
+    *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    .stage{padding:0;gap:0;display:block}
+    .page{box-shadow:none;break-after:page;page-break-after:always;width:210mm;min-height:0;overflow:hidden;display:flex;flex-direction:column;position:relative;zoom:0.82;}
+    .page:last-child{break-after:auto;page-break-after:auto}
+    #tweaks-root,.twk-panel,.twk-panel *{display:none!important}
+  }
+</style>
+</head>
+<body>
+<div class="stage">
+
+<!-- ================= PAGE 1 ================= -->
+<section class="page" data-screen-label="01 Page 1 — Inmarsat & Iridium">
+  <header class="brand">
+    <div class="brand-mark" style="gap:14px;align-items:center">
+      <div style="background:#ffffff;padding:8px 14px;border-radius:8px;display:inline-block;line-height:0;border:2px solid #ffffff">
+        <img src="satcomms-logo.png" alt="SatComms" width="120" height="120" style="display:block;width:120px;height:120px;object-fit:contain">
+      </div>
+      <div class="name" style="font-size:11px;letter-spacing:.32em;color:var(--accent);font-weight:600">Satellite<br>Communication</div>
+    </div>
+    <div class="brand-line">Pricing Brochure · Satphone Range · May 2026</div>
+    <div class="brand-tag">
+      Satphone<br><b>Starter Packs</b>
+      <small>VOICE · SMS · TRACKING · SOS</small>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-l">
+      <div class="kicker">Anywhere · To Anywhere</div>
+      <h1>Stay reachable<em>where networks end.</em></h1>
+      <p>Starter packs from Iridium, Inmarsat and Thuraya. Every bundle ships with the handset, all accessories, SIM and pre-paid airtime — so you can leave today and dial in safely from anywhere on Earth.</p>
+      <div class="stats">
+        <div class="stat"><div class="n">100%</div><div class="l">Global Pole-to-Pole</div></div>
+        <div class="stat"><div class="n">4</div><div class="l">Network Options</div></div>
+        <div class="stat"><div class="n">12mo</div><div class="l">Airtime Validity</div></div>
+      </div>
+    </div>
+    <div class="hero-r">
+      <div class="h-eyebrow">From the SatComms Bench</div>
+      <div>
+        <div class="h-big">One bundle.<br>Zero excuses.</div>
+        <p style="font-size:11px;line-height:1.55;color:#cdd9de;margin:8mm 0 0;max-width:30ch">Phone, charger, hands-free, USB cable, SIM &amp; activation, plus pre-loaded airtime — packed and ready to ship.</p>
+      </div>
+      <div class="h-meta">SKU · SAT-SP / Issue 05·26</div>
+    </div>
+  </section>
+
+  <!-- Product A: Inmarsat IsatPhone 2 -->
+  <article class="product">
+    <div class="p-body">
+      <div class="p-eyebrow">Starter Pack · Inmarsat · SOS</div>
+      <h2 class="p-title">Inmarsat <em>IsatPhone 2</em></h2>
+      <p class="p-desc">Our best-selling satphone. Voice, SMS, and built-in self-tracking with assistance button — comes with all accessories, SIM and pre-paid airtime. Reliable across the L-band Inmarsat network everywhere except the polar regions.</p>
+
+      <div class="p-prices">
+        <div class="p-row headline">
+          <span class="label"><b>Starter Pack</b> — handset + accessories + SIM + <b>100</b> Global units <span style="color:#d2342a;font-weight:700">(valid until Sept 2026)</span></span>
+          <span class="usd">incl. SIM/Airtime</span>
+          <span class="zar">R 22 949</span>
+        </div>
+        <div class="p-row">
+          <span class="label" style="color:var(--muted);font-style:italic">Order more prepaid airtime online anytime.</span>
+          <span class="usd"></span><span class="zar"></span>
+        </div>
+      </div>
+
+      <div class="p-foot">
+        <div class="note">In Stock · Ships from JHB · 1-yr Warranty</div>
+        <a class="p-cta" href="https://www.satcomms.co.za/inmarsat-isatphone2-satellite-phone-shop" target="_blank" rel="noopener">Shop now</a>
+      </div>
+    </div>
+    <div class="p-media">
+      <div class="badge">Best Seller</div>
+      <div class="placeholder pl-photo">
+        <img src="isatphone-2.webp" alt="Inmarsat IsatPhone 2 satellite phone with retail box and SIM card">
+      </div>
+      <div class="meta"><span>318 g</span><span>≤ 8 h talk</span><span>IP65</span></div>
+    </div>
+  </article>
+
+  <!-- Product B: Iridium 9555 -->
+  <article class="product">
+    <div class="p-body">
+      <div class="p-eyebrow">Starter Pack · Iridium · Workhorse</div>
+      <h2 class="p-title">Iridium <em>9555</em></h2>
+      <p class="p-desc">The proven workhorse of the Iridium fleet. Make and receive voice calls and SMS from anywhere to anywhere on the planet. Rugged, dependable, and the right call for long expeditions, fleet vehicles and emergency kits.</p>
+
+      <div class="p-prices">
+        <div class="p-row headline">
+          <span class="label"><b>Starter Pack</b> — handset + accessories + SIM &amp; activation + <b>500</b> Africa &amp; Middle East minutes <span style="color:#d2342a;font-weight:700;white-space:nowrap">(valid for 12 months)</span></span>
+          <span class="usd">incl. SIM/Airtime</span>
+          <span class="zar">R 43 099</span>
+        </div>
+        <div class="p-row headline">
+          <span class="label"><b>Starter Pack</b> — handset + accessories + SIM &amp; activation + <b>600</b> Global minutes <span style="color:#d2342a;font-weight:700;white-space:nowrap">(valid for 12 months)</span></span>
+          <span class="usd">incl. SIM/Airtime</span>
+          <span class="zar">R 54 989</span>
+        </div>
+        <div class="p-row">
+          <span class="label" style="color:var(--muted);font-style:italic">Order more prepaid airtime online anytime.</span>
+          <span class="usd"></span><span class="zar"></span>
+        </div>
+      </div>
+
+      <div class="p-foot">
+        <div class="note">In Stock · Ships from JHB · 1-yr Warranty</div>
+        <a class="p-cta" href="https://www.satcomms.co.za/iridium-satellite-phone-shop" target="_blank" rel="noopener">Shop now</a>
+      </div>
+    </div>
+    <div class="p-media">
+      <div class="badge">Best Seller</div>
+      <div class="placeholder pl-photo">
+        <img src="iridium-9555.png" alt="Iridium 9555 satellite phone with retail box and SIM card">
+      </div>
+      <div class="meta"><span>266 g</span><span>≤ 4 h talk</span><span>SBD SMS</span></div>
+    </div>
+  </article>
+
+  <footer class="footbar" style="margin-top:10mm">
+    <div>
+      <div class="phone">011 402 1166</div>
+      <div class="web">www.satcomms.co.za · <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="fb889a979e88bb889a8f9894969688d59894d5819a">[email&#160;protected]</a></div>
+    </div>
+    <div class="ctas">
+      <a href="https://www.satcomms.co.za" target="_blank" rel="noopener">Shop now →</a>
+      <a href="/cdn-cgi/l/email-protection#ea998b868f99aa998b9e8985878799c48985c4908b" class="ghost" target="_blank" rel="noopener">Contact us →</a>
+    </div>
+  </footer>
+  <div class="pageno">Page <b>01</b> / 04 · Inmarsat &amp; Iridium</div>
+</section>
+
+<!-- ================= PAGE 2 ================= -->
+<section class="page" data-screen-label="02 Page 2 — Iridium Handhelds & Hotspot">
+  <header class="brand">
+    <div class="brand-mark" style="gap:14px;align-items:center">
+      <div style="background:#ffffff;padding:8px 14px;border-radius:8px;display:inline-block;line-height:0;border:2px solid #ffffff">
+        <img src="satcomms-logo.png" alt="SatComms" width="120" height="120" style="display:block;width:120px;height:120px;object-fit:contain">
+      </div>
+      <div class="name" style="font-size:11px;letter-spacing:.32em;color:var(--accent);font-weight:600">Satellite<br>Communication</div>
+    </div>
+    <div class="brand-line">Pricing Brochure · Satphone Range · May 2026</div>
+    <div class="brand-tag">
+      Iridium<br><b>Extreme &amp; GO!</b>
+      <small>HANDHELDS · TRACKING · HOTSPOT</small>
+    </div>
+  </header>
+
+  <!-- Product C: Iridium 9575 Extreme -->
+  <article class="product">
+    <div class="p-body">
+      <div class="p-eyebrow">Starter Pack · Iridium · Tracking · SOS</div>
+      <h2 class="p-title">Iridium <em>9575 Extreme</em></h2>
+      <p class="p-desc">The toughest satphone Iridium makes. Voice, SMS, GPS tracking, two-way SMS check-ins and a dedicated SOS button that connects to a 24/7 emergency response centre. MIL-STD-810F rated for dust, shock and water.</p>
+
+      <div class="p-prices">
+        <div class="p-row headline">
+          <span class="label"><b>Starter Pack</b> — handset + accessories + SIM &amp; activation + <b>500</b> Africa &amp; Middle East minutes <span style="color:#d2342a;font-weight:700;white-space:nowrap">(valid for 12 months)</span></span>
+          <span class="usd">incl. SIM/Airtime</span>
+          <span class="zar">R 48 500</span>
+        </div>
+        <div class="p-row headline">
+          <span class="label"><b>Starter Pack</b> — handset + accessories + SIM &amp; activation + <b>600</b> Global minutes <span style="color:#d2342a;font-weight:700;white-space:nowrap">(valid for 12 months)</span></span>
+          <span class="usd">incl. SIM/Airtime</span>
+          <span class="zar">R 69 440</span>
+        </div>
+        <div class="p-row">
+          <span class="label" style="color:var(--muted);font-style:italic">Order more prepaid airtime online anytime.</span>
+          <span class="usd"></span><span class="zar"></span>
+        </div>
+      </div>
+
+      <div class="p-foot">
+        <div class="note">In Stock · Ships from JHB · 1-yr Warranty</div>
+        <a class="p-cta" href="https://www.satcomms.co.za/iridium-satellite-phone-shop" target="_blank" rel="noopener">Shop now</a>
+      </div>
+    </div>
+    <div class="p-media">
+      <div class="badge">SOS · GPS</div>
+      <div class="placeholder pl-photo">
+        <img src="iridium-9575-extreme.webp" alt="Iridium 9575 Extreme satellite phone with retail box">
+      </div>
+      <div class="meta"><span>247 g</span><span>≤ 4 h talk</span><span>MIL-STD-810F</span></div>
+    </div>
+  </article>
+
+  <!-- Product D: Iridium GO! -->
+  <article class="product">
+    <div class="p-body">
+      <div class="p-eyebrow">Starter Pack · Iridium · Group Hotspot</div>
+      <h2 class="p-title">Iridium <em>GO!</em></h2>
+      <p class="p-desc">A satellite hotspot for your own smartphone. Connect up to five devices wirelessly and make voice calls, SMS and basic messaging via the GO app — one call per line at a time. Compact, pocketable, and made for crews and small teams. Not suitable for browsing or video.</p>
+
+      <div class="p-prices">
+        <div class="p-row headline">
+          <span class="label"><b>Starter Pack</b> — GO! unit + accessories + SIM &amp; activation + <b>500</b> Africa &amp; Middle East minutes <span style="color:#d2342a;font-weight:700;white-space:nowrap">(valid for 12 months)</span></span>
+          <span class="usd">incl. SIM/Airtime</span>
+          <span class="zar">R 36 619</span>
+        </div>
+        <div class="p-row headline">
+          <span class="label"><b>Starter Pack</b> — GO! unit + accessories + SIM &amp; activation + <b>600</b> Global minutes <span style="color:#d2342a;font-weight:700;white-space:nowrap">(valid for 12 months)</span></span>
+          <span class="usd">incl. SIM/Airtime</span>
+          <span class="zar">R 48 935</span>
+        </div>
+        <div class="p-row">
+          <span class="label" style="color:var(--muted);font-style:italic">Up to 5 devices via Wi-Fi · Voice + SMS via Iridium GO! app.</span>
+          <span class="usd"></span><span class="zar"></span>
+        </div>
+      </div>
+
+      <div class="p-foot">
+        <div class="note">In Stock · Ships from JHB · 1-yr Warranty</div>
+        <a class="p-cta" href="https://www.satcomms.co.za/iridium-satellite-phone-shop" target="_blank" rel="noopener">Shop now</a>
+      </div>
+    </div>
+    <div class="p-media">
+      <div class="badge">5-User Hotspot</div>
+      <div class="placeholder pl-photo">
+        <img src="iridium-go.jpg" alt="Iridium GO! satellite hotspot with retail box">
+      </div>
+      <div class="meta"><span>295 g</span><span>≤ 16 h talk</span><span>IP65</span></div>
+    </div>
+  </article>
+
+  <footer class="footbar" style="margin-top:10mm">
+    <div>
+      <div class="phone">011 402 1166</div>
+      <div class="web">www.satcomms.co.za · <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="90e3f1fcf5e3d0e3f1e4f3fffdfde3bef3ffbeeaf1">[email&#160;protected]</a></div>
+    </div>
+    <div class="ctas">
+      <a href="https://www.satcomms.co.za" target="_blank" rel="noopener">Shop now →</a>
+      <a href="/cdn-cgi/l/email-protection#cbb8aaa7aeb88bb8aabfa8a4a6a6b8e5a8a4e5b1aa" class="ghost" target="_blank" rel="noopener">Contact us →</a>
+    </div>
+  </footer>
+  <div class="pageno">Page <b>02</b> / 04 · Iridium Extreme &amp; Group Connect</div>
+</section>
+
+<!-- ================= PAGE 3 ================= -->
+<section class="page" data-screen-label="03 Page 3 — Thuraya">
+  <header class="brand">
+    <div class="brand-mark" style="gap:14px;align-items:center">
+      <div style="background:#ffffff;padding:8px 14px;border-radius:8px;display:inline-block;line-height:0;border:2px solid #ffffff">
+        <img src="satcomms-logo.png" alt="SatComms" width="120" height="120" style="display:block;width:120px;height:120px;object-fit:contain">
+      </div>
+      <div class="name" style="font-size:11px;letter-spacing:.32em;color:var(--accent);font-weight:600">Satellite<br>Communication</div>
+    </div>
+    <div class="brand-line">Pricing Brochure · Satphone Range · May 2026</div>
+    <div class="brand-tag">
+      Thuraya<br><b>Starter Packs</b>
+      <small>VOICE · SMS · DUAL-MODE</small>
+    </div>
+  </header>
+
+  <!-- Product 5: Thuraya XT Lite -->
+  <article class="product">
+    <div class="p-body">
+      <div class="p-eyebrow">Starter Pack · Thuraya · Entry</div>
+      <h2 class="p-title">Thuraya <em>XT Lite</em></h2>
+      <p class="p-desc">Compact, rugged and unbeatable on price. The XT Lite makes and receives voice calls and SMS across the full Thuraya footprint — Africa, Europe, the Middle East and Central Asia. Ideal for first-time satellite users, weekend expeditions and emergency back-up kits.</p>
+
+      <div class="p-prices">
+        <div class="p-row headline">
+          <span class="label"><b>Starter Pack</b> — phone + charger + hands-free + USB cable + SIM &amp; activation + <b>10</b> units airtime <span style="color:#d2342a;font-weight:700">(valid for 12 months only if first call is made within 6 months of activation)</span></span>
+          <span class="usd">incl. SIM/Airtime</span>
+          <span class="zar">R 15 200</span>
+        </div>
+        <div class="p-row headline">
+          <span class="label">XT Lite handset c/w full accessories (phone only)</span>
+          <span class="usd">—</span>
+          <span class="zar">R 13 950</span>
+        </div>
+      </div>
+
+      <div class="p-foot">
+        <div class="note">In Stock · Ships from JHB · 1-yr Warranty</div>
+        <a class="p-cta" href="https://www.satcomms.co.za/product-page/thuraya-xt-lite-satellite-phone-incl-sim-and-10units-airtime" target="_blank" rel="noopener">Shop now</a>
+      </div>
+    </div>
+    <div class="p-media">
+      <div class="badge">Best Value</div>
+      <div class="placeholder pl-photo">
+        <img src="thuraya-xt-lite.jpg" alt="Thuraya XT-Lite satellite phone with retail box">
+      </div>
+      <div class="meta"><span>186 g</span><span>≤ 6 h talk</span><span>IP54</span></div>
+    </div>
+  </article>
+
+  <!-- Product 6: Thuraya One -->
+  <article class="product">
+    <div class="p-body">
+      <div class="p-eyebrow">Starter Pack · Thuraya · Premium · Dual-SIM</div>
+      <h2 class="p-title">Thuraya <em>One</em></h2>
+      <p class="p-desc">The world's first dual-mode satellite Android smartphone. Switch seamlessly between satellite and GSM, run your favourite apps, and stay reachable on a single number anywhere Thuraya reaches.</p>
+
+      <div class="p-prices">
+        <div class="p-row headline">
+          <span class="label"><b>Starter Pack</b> — phone + charger + hands-free + USB cable + SIM &amp; activation + <b>10</b> units airtime <span style="color:#d2342a;font-weight:700">(valid for 12 months only if first call is made within 6 months of activation)</span></span>
+          <span class="usd">incl. SIM/Airtime</span>
+          <span class="zar">R 28 900</span>
+        </div>
+        <div class="p-row headline">
+          <span class="label">Thuraya One handset c/w full accessories (phone only)</span>
+          <span class="usd">—</span>
+          <span class="zar">R 27 625</span>
+        </div>
+      </div>
+
+      <div class="p-foot">
+        <div class="note">In Stock · Ships from JHB · 1-yr Warranty</div>
+        <a class="p-cta" href="https://www.satcomms.co.za/product-page/thuraya-one-android-satellite-phone-prepaid-airtime-only" target="_blank" rel="noopener">Shop now</a>
+      </div>
+    </div>
+    <div class="p-media">
+      <div class="badge">Dual Mode</div>
+      <div class="placeholder pl-photo">
+        <img src="thuraya-one.webp" alt="Thuraya One satellite Android smartphone">
+      </div>
+      <div class="meta"><span>4G + SAT</span><span>Android</span><span>≤ 9 h talk</span></div>
+    </div>
+  </article>
+
+  <footer class="footbar" style="margin-top:10mm">
+    <div>
+      <div class="phone">011 402 1166</div>
+      <div class="web">www.satcomms.co.za · <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="9ae9fbf6ffe9dae9fbeef9f5f7f7e9b4f9f5b4e0fb">[email&#160;protected]</a></div>
+    </div>
+    <div class="ctas">
+      <a href="https://www.satcomms.co.za" target="_blank" rel="noopener">Shop now →</a>
+      <a href="/cdn-cgi/l/email-protection#4b382a272e380b382a3f282426263865282465312a" class="ghost" target="_blank" rel="noopener">Contact us →</a>
+    </div>
+  </footer>
+  <div class="pageno">Page <b>03</b> / 04 · Thuraya Range</div>
+</section>
+
+<!-- ================= PAGE 4 ================= -->
+<section class="page" data-screen-label="04 Page 4 — Coverage, Accessories, About">
+  <header class="brand">
+    <div class="brand-mark" style="gap:14px;align-items:center">
+      <div style="background:#ffffff;padding:8px 14px;border-radius:8px;display:inline-block;line-height:0;border:2px solid #ffffff">
+        <img src="satcomms-logo.png" alt="SatComms" width="120" height="120" style="display:block;width:120px;height:120px;object-fit:contain">
+      </div>
+      <div class="name" style="font-size:11px;letter-spacing:.32em;color:var(--accent);font-weight:600">Satellite<br>Communication</div>
+    </div>
+    <div class="brand-line">Pricing Brochure · Satphone Range · May 2026</div>
+    <div class="brand-tag">
+      Coverage<br><b>&amp; Accessories</b>
+      <small>NETWORKS · SPARES · SIMS</small>
+    </div>
+  </header>
+
+  <!-- Network compare strip -->
+  <section class="strip">
+    <div>
+      <h3><small>Pick The Right Network</small>Networks at a Glance</h3>
+      <p>Iridium reaches everywhere on Earth, including both poles. Inmarsat covers everywhere except the polar regions on a geostationary L-band. Thuraya covers Africa, Europe, the Middle East, Central Asia and Australia — roughly two-thirds of the planet.</p>
+    </div>
+
+    <div class="strip-grid">
+      <div class="strip-row head">Iridium</div>
+      <div class="strip-row"><span>9555 handheld · voice + SMS</span><span class="v">Global</span></div>
+      <div class="strip-row"><span>9575 Extreme · voice + SMS + SOS + tracking</span><span class="v">Global</span></div>
+      <div class="strip-row"><span>GO! hotspot · up to 5 devices via app</span><span class="v">Global</span></div>
+
+      <div class="strip-row head">Inmarsat</div>
+      <div class="strip-row"><span>IsatPhone 2 · voice + SMS + tracking</span><span class="v">~Global</span></div>
+
+      <div class="strip-row head">Thuraya</div>
+      <div class="strip-row"><span>XT Lite · voice + SMS</span><span class="v">EMEA</span></div>
+      <div class="strip-row"><span>Thuraya One · dual-mode Android (sat + GSM)</span><span class="v">EMEA</span></div>
+
+      <div class="strip-row head">Notes</div>
+      <div class="strip-row"><span>All starter packs include handset, accessories, SIM &amp; activation and prepaid airtime.</span><span class="v">—</span></div>
+      <div class="strip-row"><span>Top up via your SatComms account anytime — see website for voucher pricing.</span><span class="v">—</span></div>
+    </div>
+  </section>
+
+  <!-- Coverage map -->
+  <section class="coverage">
+    <div>
+      <h3><small>The Footprint</small>Iridium · Inmarsat · Thuraya</h3>
+      <p>Iridium's 66-satellite low-Earth-orbit constellation covers the entire planet — every ocean, every desert, every pole. Inmarsat's three geostationary satellites cover everything between roughly 76°N and 76°S. Thuraya covers the EMEA + Central Asia + Australia region.</p>
+      <p style="font-family:'JetBrains Mono';font-size:9.5px;letter-spacing:.08em;color:var(--muted);text-transform:uppercase;margin-top:6mm">⌖ Iridium: 66 LEO Sats · ⌖ Inmarsat: 3 GEO · ⌖ Thuraya: 2 GEO</p>
+    </div>
+    <div class="map">
+      <svg class="globe" viewBox="0 0 200 200" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+        <defs>
+          <radialGradient id="globeFill" cx="40%" cy="38%" r="65%">
+            <stop offset="0%" stop-color="rgba(31,120,189,.18)"/>
+            <stop offset="70%" stop-color="rgba(31,120,189,.10)"/>
+            <stop offset="100%" stop-color="rgba(31,120,189,.02)"/>
+          </radialGradient>
+        </defs>
+        <g fill="none" stroke="rgba(31,120,189,.55)" stroke-width="0.6">
+          <circle cx="100" cy="100" r="78" fill="url(#globeFill)" stroke="rgba(31,120,189,.85)" stroke-width="0.9"/>
+          <!-- latitudes -->
+          <ellipse cx="100" cy="100" rx="78" ry="14"/>
+          <ellipse cx="100" cy="100" rx="74" ry="34"/>
+          <ellipse cx="100" cy="100" rx="64" ry="52"/>
+          <ellipse cx="100" cy="100" rx="48" ry="68"/>
+          <!-- longitudes -->
+          <ellipse cx="100" cy="100" rx="14" ry="78"/>
+          <ellipse cx="100" cy="100" rx="34" ry="78" transform="rotate(20 100 100)"/>
+          <ellipse cx="100" cy="100" rx="34" ry="78" transform="rotate(-20 100 100)"/>
+          <ellipse cx="100" cy="100" rx="56" ry="78" transform="rotate(45 100 100)"/>
+          <ellipse cx="100" cy="100" rx="56" ry="78" transform="rotate(-45 100 100)"/>
+          <!-- poles -->
+          <circle cx="100" cy="22" r="1.6" fill="rgba(31,120,189,.9)" stroke="none"/>
+          <circle cx="100" cy="178" r="1.6" fill="rgba(31,120,189,.9)" stroke="none"/>
+        </g>
+        <!-- orbital ring + satellites -->
+        <g fill="none" stroke="rgba(31,120,189,.35)" stroke-width="0.5" stroke-dasharray="1.5 2">
+          <ellipse cx="100" cy="100" rx="92" ry="92" transform="rotate(18 100 100)"/>
+        </g>
+        <g fill="var(--accent, #d97706)">
+          <circle cx="100" cy="8" r="1.8"/>
+          <circle cx="187" cy="135" r="1.8"/>
+          <circle cx="36" cy="62" r="1.8"/>
+          <circle cx="160" cy="46" r="1.8"/>
+          <circle cx="55" cy="170" r="1.8"/>
+        </g>
+      </svg>
+      <div class="map-caption">
+        <span style="color:var(--accent)">⌖ Global Coverage</span>
+        <span>Pole-to-pole on Iridium</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Accessories -->
+  <section class="accessories">
+    <div class="acc-head">
+      <h3><small>Add-ons &amp; Spares</small>Accessories</h3>
+      <p>Car chargers · Spare batteries · Wall chargers · Adapters · Docking stations · Protective cases — we stock the lot.</p>
+    </div>
+    <div class="acc-grid">
+      <div class="acc">
+        <svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="10" y="6" width="28" height="36" rx="3"/><rect x="20" y="38" width="8" height="2"/><circle cx="24" cy="14" r="2"/></svg>
+        <div class="nm">Car Charger</div>
+      </div>
+      <div class="acc">
+        <svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="6" y="14" width="32" height="20" rx="2"/><rect x="38" y="20" width="4" height="8"/><line x1="14" y1="22" x2="14" y2="26"/></svg>
+        <div class="nm">Battery</div>
+      </div>
+      <div class="acc">
+        <svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M16 6h16l4 12-12 24L12 18z"/><line x1="12" y1="18" x2="36" y2="18"/></svg>
+        <div class="nm">Wall Charger</div>
+      </div>
+      <div class="acc">
+        <svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="14" cy="24" r="6"/><circle cx="34" cy="24" r="6"/><line x1="20" y1="24" x2="28" y2="24"/></svg>
+        <div class="nm">Adapter</div>
+      </div>
+      <div class="acc">
+        <svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="10" y="30" width="28" height="6" rx="1"/><rect x="18" y="10" width="12" height="20" rx="2"/></svg>
+        <div class="nm">Docking</div>
+      </div>
+      <div class="acc">
+        <svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="12" y="6" width="24" height="36" rx="4"/><rect x="16" y="10" width="16" height="22" rx="1"/></svg>
+        <div class="nm">Case</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about">
+    <div>
+      <h3><small>About</small>SatComms</h3>
+      <p style="font-family:'JetBrains Mono';font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:var(--teal);margin-top:6mm">Approved Service Provider</p>
+      <p>Iridium · Inmarsat · Thuraya · VSAT</p>
+    </div>
+    <div>
+      <p>SatComms is an approved service provider of Iridium, Inmarsat, Thuraya, VSAT and other satellite phone, internet and telecommunication products. We stock the full range of satellite equipment and airtime — from handheld satphones and BGAN units to FleetBroadband and Ka/Ku VSAT systems.</p>
+      <p>Whether you need a handheld satphone for roaming, a mobile broadband office, or a fixed VSAT installation — we'll match the right kit to your route, your budget and your duty cycle.</p>
+      <p style="color:var(--teal);font-weight:600">Contact us today — we'll give you a great reception.</p>
+    </div>
+  </section>
+
+  <p class="legal">
+    <b>E&amp;OE</b> · Prices are indicative and subject to change without notice. Airtime validity rules apply per network — first call must be made within the validity window of activation. <b>NB You are responsible for monitoring your airtime balance and expiry date — please diarise it.</b>
+  </p>
+
+  <footer class="footbar" style="margin-top:8mm">
+    <div>
+      <div class="phone">011 402 1166</div>
+      <div class="web">www.satcomms.co.za · <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="0c7f6d60697f4c7f6d786f6361617f226f6322766d">[email&#160;protected]</a></div>
+    </div>
+    <div class="ctas">
+      <a href="https://www.satcomms.co.za" target="_blank" rel="noopener">Shop now →</a>
+      <a href="/cdn-cgi/l/email-protection#99eaf8f5fcead9eaf8edfaf6f4f4eab7faf6b7e3f8" class="ghost" target="_blank" rel="noopener">Contact us →</a>
+    </div>
+  </footer>
+  <div class="pageno">Page <b>04</b> / 04 · Coverage, Accessories &amp; About</div>
+</section>
+
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+<div id="tweaks-root"></div>
+<script type="text/babel">
+const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+  "palette": "field",
+  "voice": "manual",
+  "card": "bordered"
+}/*EDITMODE-END*/;
+
+function applyTweaks(t){
+  const b = document.body;
+  b.classList.remove('pal-field','pal-desert','pal-arctic','pal-night');
+  b.classList.add('pal-' + t.palette);
+  b.classList.remove('voice-manual','voice-editorial','voice-tech');
+  b.classList.add('voice-' + t.voice);
+  b.classList.remove('card-bordered','card-hairline','card-slab');
+  b.classList.add('card-' + t.card);
+}
+
+function App(){
+  const [t,setTweak] = useTweaks(TWEAK_DEFAULTS);
+  React.useEffect(()=>applyTweaks(t),[t]);
+  return (
+    <TweaksPanel title="Tweaks">
+      <TweakSection label="Mission Palette" />
+      <TweakRadio value={t.palette}
+        options={[{value:'field',label:'Field'},{value:'desert',label:'Desert'},{value:'arctic',label:'Arctic'},{value:'night',label:'Night Op'}]}
+        onChange={v=>setTweak('palette',v)} />
+      <TweakSection label="Type Voice" />
+      <TweakRadio value={t.voice}
+        options={[{value:'manual',label:'Field Manual'},{value:'editorial',label:'Editorial'},{value:'tech',label:'Tech Spec'}]}
+        onChange={v=>setTweak('voice',v)} />
+      <TweakSection label="Card Treatment" />
+      <TweakRadio value={t.card}
+        options={[{value:'bordered',label:'Bordered'},{value:'hairline',label:'Hairline'},{value:'slab',label:'Slab'}]}
+        onChange={v=>setTweak('card',v)} />
+    </TweaksPanel>
+  );
+}
+
+applyTweaks(TWEAK_DEFAULTS);
+ReactDOM.createRoot(document.getElementById('tweaks-root')).render(<App />);
+</script>
+<script>
+/* Mobile fit-to-width: scale the whole brochure down on narrow viewports
+   (Wix iframe sizes naturally on mobile; this keeps the A4 layout intact). */
+(function(){
+  var TARGET = 826; // .stage outer width: 210mm page + 16px*2 stage padding
+  function fit(){
+    var w = document.documentElement.clientWidth || window.innerWidth;
+    if (!w) return;
+    if (w < TARGET) {
+      document.documentElement.style.zoom = (w / TARGET).toFixed(4);
+    } else {
+      document.documentElement.style.zoom = '';
+    }
+  }
+  window.addEventListener('resize', fit);
+  window.addEventListener('orientationchange', fit);
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', fit);
+  } else {
+    fit();
+  }
+  // Also re-fit after fonts/images settle.
+  window.addEventListener('load', fit);
+})();
+</script>
+</body>
+</html>
